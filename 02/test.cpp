@@ -31,14 +31,13 @@ void tests(){
 
     alloc2.reset();
 
-    /* Тут не понимаю почему не работает
     try{
         LinearAllocator all2(1000*1000*1000*1000); 
     } catch(...){
         std:: cout<< std:: endl << "Test big allocate passed" << std:: endl; 
-        // не ловит исключения а просто выводит ошибку аллокации?
+
     }
-    */
+    
     
 };
 

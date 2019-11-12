@@ -7,8 +7,10 @@ LinearAllocator:: LinearAllocator(size_t maxSize){
     offset = 0;
     remainSize = maxSize;
     head_ptr = (char*) malloc(maxSize);
-    if (head_ptr == nullptr)
+    if (head_ptr == nullptr){
+        throw std:: runtime_error("Not enough memory");
         std:: cout << "Not enough memory" << std:: endl;
+    }
 };
 
 char* LinearAllocator:: alloc(size_t size){
