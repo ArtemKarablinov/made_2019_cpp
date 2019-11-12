@@ -2,7 +2,7 @@
 **Create LinearAllocator**
 
 Написать свой аллокатор со стратегией линейного выделения памяти со следующим интерфейсом:
-```
+```cpp
 class LinearAllocator
 {
 public:
