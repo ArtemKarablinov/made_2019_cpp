@@ -15,6 +15,7 @@ class LinearAllocator
         std:: size_t offset;
 
     public:
+        LinearAllocator();
         LinearAllocator(std:: size_t maxSize);
         char* alloc(std:: size_t size);
         void reset();

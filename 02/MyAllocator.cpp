@@ -23,9 +23,8 @@ char* LinearAllocator:: alloc(size_t size){
 void LinearAllocator:: reset(){
     remainSize += offset;
     offset = 0;
-}
+};
 
-int main(){
-	std:: cout<<"Hello world!";
-	return 0;
-}
+LinearAllocator:: ~LinearAllocator(){
+    head_ptr = nullptr;
+};
